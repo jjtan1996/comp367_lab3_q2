@@ -37,9 +37,3 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(build.artifactStagingDirectory)/WebApp.zip' # The folder or file path to publish.
-    ArtifactName: 'drop' # The name of the artifact, can be anything.
-    publishLocation: 'Container' # Azure Pipelines will store the published artifacts.
